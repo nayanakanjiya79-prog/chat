@@ -7,8 +7,8 @@ from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from typing import Dict
 
-from models import Message, SystemMessage, UserListMessage
-from database import save_message, get_messages, add_user, remove_user
+from .models import Message, SystemMessage, UserListMessage
+from .database import save_message, get_messages, add_user, remove_user
 
 MAX_USERS = 3
 
